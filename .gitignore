@@ -1,0 +1,44 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+.profile_default/
+.ipython/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Editors ---
+.vscode/
+.idea/
+
+# --- Logs / outputs ---
+runs/
+*.log
+
+# --- Data (if you ever add) ---
+data/
+datasets/
+
+# --- Torch checkpoints (if you add later) ---
+*.pt
+*.pth
+*.ckpt
+
+# --- Matplotlib cache ---
+.matplotlib/

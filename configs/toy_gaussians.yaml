@@ -1,0 +1,54 @@
+system:
+  seed: 0
+  device: auto   # auto | cpu | cuda
+
+dataset:
+  name: gaussians   # moons | spirals | gaussians
+
+  # moons
+  moons_noise: 0.08
+  moons_distance: 0.5
+
+  # spirals
+  spirals_noise: 0.05
+  spirals_turns: 2.0
+  spirals_radius: 1.0
+  spirals_gap: 0.5
+
+  # gaussians (GMM on a circle + optional far mode)
+  gaussians_k: 8
+  gaussians_circle_radius: 4.0
+  gaussians_cov_scale: 0.12
+  gaussians_cov_anisotropy: 3.0
+  gaussians_cov_rot: true
+  gaussians_weights: uniform  # uniform | random
+
+  gaussians_add_far_component: true
+  gaussians_far_radius: 12.0
+  gaussians_far_angle: 0.0     # radians; set null for random
+  gaussians_far_cov_scale: 0.08
+  gaussians_far_weight: 0.08
+
+generator:
+  z_dim: 4
+  hidden_dim: 128
+  n_layers: 3
+  out_dim: 2
+
+drift:
+  T: 0.10
+  drift_scale: 0.20
+
+training:
+  steps: 4000
+  batch_size: 512
+  n_pos: 512
+  lr: 0.002
+  weight_decay: 0.0
+
+logging:
+  run_dir: runs/gaussians_seed0
+  print_every: 200
+  plot_every: 400
+  n_vis: 2000
+  n_preview: 3000
