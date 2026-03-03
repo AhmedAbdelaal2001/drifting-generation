@@ -3,7 +3,7 @@ system:
   device: auto   # auto | cpu | cuda
 
 dataset:
-  name: gaussians   # moons | spirals | gaussians
+  name: moons   # moons | spirals | gaussians
 
   # moons
   moons_noise: 0.08
