@@ -57,6 +57,14 @@ CFG_PATH = "../configs/toy_drifting.yaml"
 
 Run all cells. Outputs will be saved to the directory specified by `logging.run_dir` in the config.
 
+### 🚀 Run in Google Colab
+
+Click below to run an interactive version in Colab (auto-setup included):
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/AhmedAbdelaal2001/drifting-playground/blob/main/notebooks/drifting_colab.ipynb
+)
+
 ### Option B: Script
 
 ```bash
