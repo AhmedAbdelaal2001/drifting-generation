@@ -6,6 +6,8 @@ a one-step generator trained by regressing to a **stop-gradient drifted target**
 This repo focuses on **toy 2D datasets** (two moons, spirals, Gaussian mixture), so you can understand and experiment with drifting
 before scaling up to more complex settings.
 
+![Training evolution](assets/training_evolution.gif)
+
 ---
 
 ## What this implements
